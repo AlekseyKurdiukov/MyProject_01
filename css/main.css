@@ -1,0 +1,657 @@
+/* Базовые стили */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+table, tr, td {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+body {
+  font-size: 1em;
+}
+
+textarea:focus, input:focus{
+outline: none;
+}
+
+.banner {
+  position: relative;
+  overflow: auto;
+}
+
+  .banner li {
+    list-style: none;
+  }
+
+  .banner ul li {
+    float: left;
+  }
+
+.blok_size {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.clearfix {
+  overflow: hidden;
+}
+
+.min_wid {
+  min-width: 380px;
+}
+
+/* Шапка сайта */
+
+header {
+  background-color: rgba(7, 7, 7, 0.3);
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+}
+
+.header_one {
+  padding: 15px 0 25px 0;
+}
+
+  .logo {
+    float: left;
+    position: relative;
+    top: 5px;
+  }
+
+.navigation {
+  list-style-type: none;
+  float: right;
+  position: relative;
+  top: 7px;
+}
+
+  .navigation li {
+    float: left;
+  }
+
+    .navigation li a {
+      font-family: "Roboto", sans-serif;
+      display: block;
+      padding: 15px 25px;
+      font-size: 0.8125em;
+      color: #fff;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+
+    .navigation li a:hover {
+      color: #4bcaff;
+    }
+
+    .navigation li a:last-child {
+      padding-right: 0;
+    }
+
+/* Слайдер */
+
+  .carousel-item {
+    position: relative;
+  }
+
+    .text_position {
+      position: absolute;
+      top: 38.175%;
+      left: 43.606%;
+      max-width: 670px;
+    }
+
+    .carousel-item h2 {
+      font-size: 3em;
+      font-family: "Roboto", sans-serif;
+      color: #fff;
+    }
+
+    .carousel-item p {
+      font-size: 1.125em;
+      font-family: "Roboto Medium", sans-serif;
+      color: #fff;
+      line-height: 1.5em;
+    }
+
+    .carousel-item a {
+      font-size: 1em;
+      font-family: "Roboto Medium", sans-serif;
+      color: #fff;
+      padding: 20px 50px;
+      border: 2px solid #fff;
+      border-radius: 5px;
+      display: inline-block;
+      margin-top: 35px;
+    }
+
+    .carousel-item a:hover {
+      color: #4bcaff;
+      border: 2px solid #4bcaff;
+    }
+
+    .carousel-item img {
+      border-bottom: 4px solid #4bcaff;
+    }
+
+/* Новости */
+
+.news {
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+  .news h2 {
+    color: #414042;
+    font-size: 2.25em;
+    margin-top: 50px;
+  }
+
+  .news h3 {
+    color: #414042;
+    font-size: 1.25em;
+    margin-bottom: 50px;
+  }
+
+.news_blok {
+  float: left;
+  width: 26%;
+  margin-right: 11%;
+  line-height: 1.3em;
+  margin-bottom: 110px;
+}
+
+.news_blok:last-child {
+  margin-right: 0;
+}
+
+  .news_blok img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+
+  .news_blok a {
+    font-size: 0.9375em;
+    font-family: "Roboto Condensed", sans-serif;
+    color: #414042;
+    text-transform: uppercase;
+  }
+
+  .news_blok a:hover {
+    text-decoration: underline;
+  }
+
+  .news_blok p {
+    font-size: 0.8125em;
+    font-family: "Roboto", sans-serif;
+    color: #838383;
+    font-weight: normal;
+    margin-top: 20px;
+  }
+
+/* Продукция */
+
+.products {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+  .products h2 {
+    color: #414042;
+    font-size: 2.25em;
+  }
+
+  .products h3 {
+    color: #414042;
+    font-size: 1.25em;
+    margin-bottom: 50px;
+  }
+
+  .products_blok {
+    float: left;
+    width: 23.076%;
+    margin-right: 2.5653%;
+    line-height: 1em;
+  }
+
+  .products_blok:last-child {
+    margin-right: 0;
+  }
+
+   .products_blok img {
+     width: 100%;
+   }
+
+   .img_container {
+     font-size: 0;
+   }
+
+   .products_content {
+     padding: 15px 15px 0 15px;
+     border-top: 0;
+     text-align: center;
+   }
+
+     .products_content p {
+       font-size: 0.625em;
+       color: #67686d;
+       font-family: "Roboto Light", sans-serif;
+       margin-bottom: 10px;
+     }
+
+/* Информация */
+
+.about {
+  background: url("../img/video.png") center top no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+
+  .about img {
+    margin-top: 160px;
+    cursor: pointer;
+  }
+
+  .about h2 {
+    font-size: 3em;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .about p {
+    font-size: 1.125em;
+    padding-bottom: 160px;
+    max-width: 630px;
+    margin: 0 auto;
+  }
+
+/* Форма ввода email */
+
+.footer_form {
+  background-color: #414042;
+  text-align: center;
+}
+
+  .footer_form h2 {
+    color: #fff;
+    font-size: 4.583em;
+    margin-top: 30px;
+  }
+
+  .footer_form a {
+    font-size: 1em;
+    font-family: "Roboto Medium", sans-serif;
+    color: #414042;
+    background-color: #4bcaff;
+    padding: 20px 50px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 35px;
+    margin-bottom: 30px;
+  }
+
+  .footer_form a:hover {
+    color: #fff;
+  }
+
+/* Подвал */
+
+.footer {
+  background-color: #2a2d34;
+  padding: 45px 0;
+}
+
+.footer_blok {
+  float: left;
+  width: 23.076%;
+  margin-right: 2.5653%;
+  line-height: 1.3em;
+}
+
+.footer_blok:last-child {
+  margin-right: 0;
+}
+
+  .footer_blok h3 {
+    color: #fff;
+    font-size: 1.375em;
+    font-family: "Roboto Condensed", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  .footer_blok p {
+    color: #7e7f84;
+    font-size: 0.875em;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 20px;
+  }
+
+  .footer_blok a {
+    color: #fff;
+    font-size: 0.875em;
+    font-family: "Roboto Medium", sans-serif;
+    margin-bottom: 20px;
+    text-decoration: none;
+  }
+
+  .footer_blok a:hover {
+    color: #f45a40;
+    text-decoration: underline;
+  }
+
+  .blok_list {
+    width: 53%;
+    float: left;
+    margin-right: 2%;
+  }
+
+  .blok_list:last-child{
+    width: 45%;
+    margin-right: 0;
+  }
+
+   .blok_list a {
+     color: #7e7f84;
+     font-size: 0.875em;
+     font-family: "Roboto", sans-serif;
+     display: block;
+     margin-bottom: 0;
+   }
+
+   .form_footer input[type="email"] {
+     color: #7e7f84;
+     font-size: 0.875em;
+     font-family: "Roboto", sans-serif;
+     text-transform: uppercase;
+     padding: 13px;
+     border: 0;
+     box-sizing: border-box;
+     width: 100%;
+     margin-bottom: 15px;
+   }
+
+   .form_footer textarea {
+     color: #7e7f84;
+     font-size: 0.875em;
+     font-family: "Roboto", sans-serif;
+     text-transform: uppercase;
+     padding: 13px;
+     border: 0;
+     box-sizing: border-box;
+     width: 100%;
+     margin-bottom: 15px;
+   }
+
+   .form_footer input[type="submit"] {
+     background-color: #ff674f;
+     color: white;
+     font-size: 0.875em;
+     font-family: "Roboto", sans-serif;
+     text-transform: uppercase;
+     padding: 13px 20px;
+     border: 0;
+     box-sizing: border-box;
+   }
+
+/* Медиа запросы */
+
+/*
+
+@media (max-width: 970px) {
+  .carousel-item h2{
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    font-size: 3em;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    color: #f45a40;
+  }
+
+  .carousel-item p{
+    position: absolute;
+    top: 220px;
+    left: 50px;
+    font-size: 0.875em;
+    font-weight: normal;
+    font-family: "Roboto Medium", sans-serif;
+    color: #f45a40;
+    line-height: 1.5em;
+  }
+
+  .products_blok {
+    float: left;
+    width: 46%;
+    margin: 0 2%;
+    line-height: 1em;
+    margin-bottom: 30px;
+  }
+
+  .products_blok:last-child {
+    margin-right: 2%;
+  }
+
+   .products_blok img {
+     width: auto;
+     display: block;
+     margin: 0 auto;
+   }
+
+   .img_container {
+     font-size: 0;
+   }
+
+   .products_content {
+     padding: 15px 15px 0 15px;
+     border: 0;
+     border-top: 0;
+   }
+
+     .products_icon {
+       float: right;
+       width: 16px;
+     }
+
+ .footer_blok {
+   float: left;
+   width: 46%;
+   margin: 0 2%;
+   line-height: 1.3em;
+ }
+
+ .footer_blok:last-child {
+   margin-right: 2%;
+ }
+
+ .about h2 {
+   color: #67686d;
+   font-size: 1.375em;
+   font-weight: bold;
+   font-family: "Roboto", sans-serif;
+   margin-top: 5px;
+   margin-bottom: 35px;
+ }
+}
+
+@media (max-width: 870px) {
+  .news_blok {
+    float: left;
+    width: 96%;
+    margin: 0 2%;
+    line-height: 1.3em;
+    margin-bottom: 30px;
+  }
+
+  .news_blok:last-child {
+    margin-right: 2%;
+    margin-bottom: 0;
+  }
+
+    .news_blok img {
+      width: auto;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 835px) {
+  .carousel-item h2{
+    position: absolute;
+    top: 70px;
+    left: 50px;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    color: #f45a40;
+  }
+
+  .carousel-item p{
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    font-size: 0.875em;
+    font-weight: normal;
+    font-family: "Roboto Medium", sans-serif;
+    color: #f45a40;
+    line-height: 1.5em;
+  }
+
+  .footer_form {
+    background-color: #f45a40;
+    margin-top: 35px;
+    text-align: center;
+  }
+
+    .footer_form_text {
+      float: none;
+      color: white;
+      text-transform: uppercase;
+      font-size: 1.375em;
+      font-family: "Roboto Condensed", sans-serif;
+      padding: 15px 0;
+      display: block;
+    }
+
+    .footer_form_forma {
+      float: none;
+      padding: 0 0 15px 0;
+      display: block;
+      margin: 0 auto;
+    }
+
+  .about h2 {
+    margin-left: 2%;
+  }
+
+  .about_text {
+    float: none;
+    width: 96%;
+    margin: 0 2%;
+    line-height: 1.3em;
+  }
+
+  .about_map {
+    float: none;
+    width: 96%;
+    margin: 0 2%;
+  }
+}
+
+@media (max-width: 696px) {
+  .navi {
+    margin: 0 auto;
+    display: table;
+  }
+
+  .poisk {
+    float: none;
+    padding: 15px 20px;
+    margin: 0 auto;
+    display: table;
+  }
+}
+
+@media (max-width: 580px) {
+  .carousel-item h2{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    color: #f45a40;
+  }
+
+  .carousel-item p{
+    position: absolute;
+    top: 110px;
+    left: 50px;
+    font-size: 0.875em;
+    font-weight: normal;
+    font-family: "Roboto Medium", sans-serif;
+    color: #f45a40;
+    line-height: 1.5em;
+  }
+
+  .products_blok {
+    float: left;
+    width: 96%;
+    margin: 0 2%;
+    line-height: 1em;
+    margin-bottom: 30px;
+  }
+
+  .footer_blok {
+    float: left;
+    width: 96%;
+    margin: 0 2%;
+    line-height: 1.3em;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 487px) {
+  .navigation li {
+    float: none;
+    text-align: center;
+  }
+
+  .navigation li a{
+    padding: 15px 0;
+  }
+
+  .logo {
+    float: none;
+    top: 0;
+    display: table;
+    margin: 0 auto;
+  }
+
+  .phone_and_by {
+    float: none;
+  }
+
+  .phone {
+    float: none;
+    display: table;
+    margin: 0 auto;
+  }
+
+  .by {
+    float: none;
+    display: table;
+    margin: 0 auto;
+  }
+}
+
+*/
