@@ -28,9 +28,9 @@ outline: none;
     list-style: none;
   }
 
-  .banner ul li {
-    float: left;
-  }
+    .banner ul li {
+      float: left;
+    }
 
 .blok_size {
   max-width: 1170px;
@@ -47,7 +47,7 @@ outline: none;
 
 /* Шапка сайта */
 
-header {
+.header_main {
   background-color: rgba(7, 7, 7, 0.3);
   position: absolute;
   top: 0;
@@ -55,45 +55,43 @@ header {
   width: 100%;
 }
 
-.header_one {
-  padding: 15px 0 25px 0;
-}
-
-  .logo {
-    float: left;
-    position: relative;
-    top: 5px;
+  .header_main > .blok_size {
+    padding: 20px 0 20px 0;
   }
 
-.navigation {
-  list-style-type: none;
-  float: right;
-  position: relative;
-  top: 7px;
-}
-
-  .navigation li {
-    float: left;
-  }
-
-    .navigation li a {
-      font-family: 'Droid Sans', arial;
-      font-weight: bold;
-      display: block;
-      padding: 15px 25px;
-      font-size: 0.8125em;
-      color: #fff;
-      text-transform: uppercase;
-      text-decoration: none;
+    .logo {
+      float: left;
     }
 
-    .navigation li a:hover {
-      color: #4bcaff;
+    .navigation_user {
+      list-style-type: none;
+      float: right;
+      position: relative;
+      top: 6px;
     }
 
-    .navigation li a:last-child {
-      padding-right: 0;
-    }
+      .navigation_user li {
+        float: left;
+      }
+
+        .navigation_user li a {
+          font-family: 'Droid Sans', arial;
+          font-weight: bold;
+          display: block;
+          padding: 15px 25px;
+          font-size: 0.8125em;
+          color: #fff;
+          text-transform: uppercase;
+          text-decoration: none;
+        }
+
+        .navigation_user li a:hover {
+          color: #4bcaff;
+        }
+
+        .navigation_user li a:last-child {
+          padding-right: 0;
+        }
 
 /* Слайдер */
 
