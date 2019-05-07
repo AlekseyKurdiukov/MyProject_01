@@ -95,31 +95,36 @@ outline: none;
 
 /* Слайдер */
 
-  .carousel-item {
-    position: relative;
+.carousel-item {
+position: relative;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  display: none;
+}
+
+  .text_position {
+    position: absolute;
+    top: 38.175%;
+    left: 43.606%;
+    max-width: 680px;
   }
 
-    .text_position {
-      position: absolute;
-      top: 38.175%;
-      left: 43.606%;
-      max-width: 670px;
-    }
-
-    .carousel-item h2 {
+    .text_position h2 {
       font-size: 3em;
       font-family: "Lato Light", sans-serif;
       color: #fff;
+      margin-bottom: 15px;
     }
 
-    .carousel-item p {
+    .text_position p {
       font-size: 1.125em;
       font-family: "Lato Light", sans-serif;
       color: #fff;
       line-height: 1.5em;
     }
 
-    .carousel-item a {
+    .text_position a {
       font-size: 1em;
       font-family: "Lato", sans-serif;
       color: #fff;
@@ -130,14 +135,14 @@ outline: none;
       margin-top: 35px;
     }
 
-    .carousel-item a:hover {
+    .text_position a:hover {
       color: #4bcaff;
       border: 2px solid #4bcaff;
     }
 
-    .carousel-item img {
-      border-bottom: 4px solid #4bcaff;
-    }
+  .carousel-item img {
+    border-bottom: 4px solid #4bcaff;
+  }
 
 /* Новости */
 
